@@ -1,11 +1,10 @@
-const express = require('express');
-const app = express();
-const PORT = 3000;
+document.addEventListener('DOMContentLoaded', () => {
+  
+  const menuToggle = document.getElementById('menu-icono');
+  const menu = document.getElementById('menu');
 
-app.get('/', (req, res) => {
-  res.send("hola, mundo");
-})
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
 
-app.listen(PORT, () => {
-  console.log('servidor escuchado en http:localhots:${PORT}');
 });
